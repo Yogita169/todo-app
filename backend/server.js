@@ -9,9 +9,7 @@ require('dotenv').config()
 const PORT = 5000;
 
 mongoose.connect(process.env.MONGO_URI, {
-  dbName:'todos',
-  useNewUrlParser: true, 
-  useUnifiedTopology: true 
+  dbName:'todos'
 });
 
 app.use(cors());
